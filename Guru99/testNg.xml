@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Guru99">
+
+<listeners> 
+
+<listener class-name="com.INetBanking.Utility.Report"></listener>
+
+</listeners>
+
+<test name="Chrome">
+<parameter name="browser" value="chrome"/>
+<classes>
+<class name="com.INetBankingTestCases.TC_LoginTest_001"/>
+</classes>
+</test>
+
+<!-- Commenting 
+<test name="IE">
+<parameter name="browser" value="IE"/>
+<classes>
+<class name="com.INetBankingTestCases.TC_LoginTest_001"/>
+</classes>
+</test>
+ -->
+
+</suite>
